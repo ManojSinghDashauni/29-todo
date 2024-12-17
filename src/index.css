@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --s-1: rgb(250, 251, 255);
+  --s-2: rgba(22, 27, 29, 0.23);
+  --color-1: #eff2f9;
+  --color-2: #e4e8f1;
+  --color-3: #b5bfc6;
+  --color-4: #6e7f8d;
+  --color-primary: #0d5051;
+  --color-secondary: #93fd70;
+}
+* {
+  background: var(--color-1);
+}
+
+.onlyelevation {
+  background: var(--color-1);
+  border-radius: 16px;
+  box-shadow: -5px -5px 5px var(--s-1), 5px 5px 5px var(--s-2);
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.onlyelevation:hover {
+  box-shadow: -0px -0px 0px var(--s-1), 0px 0px 0px var(--s-2);
+}
+
+.elevation {
+  background: var(--color-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: -5px -5px 5px var(--s-1), 5px 5px 5px var(--s-2);
+  transition: all 0.3s ease;
+  color: var(--color-primary);
+}
+.elevation:hover {
+  box-shadow: -0px -0px 0px var(--s-1), 0px 0px 0px var(--s-2);
+}
+
+.elevation--inner {
+  background: var(--color-1);
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+  /* border-radius: 16px; */
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3),
+    -8px -8px 20px rgba(255, 255, 255, 0.9),
+    inset 6px 6px 12px rgba(0, 0, 0, 0.4),
+    inset -6px -6px 12px rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+  color: var(--color-primary);
+}
+
+.elevation--inner:hover {
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3),
+    -8px -8px 20px rgba(255, 255, 255, 0.9),
+    inset 6px 6px 12px rgba(0, 0, 0, 0.4),
+    inset -6px -6px 12px rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+@layer {
+  .button {
+    @apply p-4 text-base font-semibold;
+  }
+}
