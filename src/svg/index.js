@@ -4,7 +4,6 @@ import DeleteSVG from "./DeleteSVG";
 import EditSVG from "./EditSVG";
 import HomeSVG from "./HomeSVG";
 import Maginifying from "./Maginifying";
-import PlusSvg from "./PlusSvg";
 import NewSVG from "./NewSVG";
 import FolderSVG from "./FolderSVG";
 import ProfileSVG from "./ProfileSVG";
@@ -18,7 +17,6 @@ export {
   EditSVG,
   HomeSVG,
   Maginifying,
-  PlusSvg,
   NewSVG,
   FolderSVG,
   ProfileSVG,
